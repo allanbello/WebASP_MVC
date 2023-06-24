@@ -23,6 +23,13 @@ namespace WebASP_CoreMVC.Controllers
             return View();
         }
 
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Salles web MVC app from C# Course";
+            ViewData["Criador"] = "Allan Roger Bello";
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
